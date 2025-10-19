@@ -34,7 +34,7 @@ export default function Results() {
   });
 
   return (
-    <div className="min-h-screen bg-gradient-hero py-12">
+    <div className="min-h-screen bg-gradient-hero py-12 mt-8">
       <div className="container mx-auto px-4 max-w-4xl">
         {!showCertificate ? (
           <>
@@ -44,7 +44,9 @@ export default function Results() {
                   <Trophy className="h-16 w-16 text-white" />
                 </div>
               </div>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">Test Complete!</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+                Test Complete!
+              </h1>
               <p className="text-xl text-muted-foreground">
                 Great job, {results.userName}! Here are your results.
               </p>
@@ -56,7 +58,9 @@ export default function Results() {
                   <h3 className="text-lg font-semibold text-muted-foreground mb-2">
                     Words Per Minute
                   </h3>
-                  <p className="text-5xl font-bold text-accent mb-2">{results.wpm}</p>
+                  <p className="text-5xl font-bold text-accent mb-2">
+                    {results.wpm}
+                  </p>
                   <p className="text-sm text-muted-foreground">WPM</p>
                 </CardContent>
               </Card>
@@ -66,8 +70,12 @@ export default function Results() {
                   <h3 className="text-lg font-semibold text-muted-foreground mb-2">
                     Accuracy
                   </h3>
-                  <p className="text-5xl font-bold text-success mb-2">{results.accuracy}%</p>
-                  <p className="text-sm text-muted-foreground">Correct Characters</p>
+                  <p className="text-5xl font-bold text-success mb-2">
+                    {results.accuracy}%
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Correct Characters
+                  </p>
                 </CardContent>
               </Card>
 
@@ -76,7 +84,9 @@ export default function Results() {
                   <h3 className="text-lg font-semibold text-muted-foreground mb-2">
                     Total Words
                   </h3>
-                  <p className="text-5xl font-bold text-primary mb-2">{results.totalWords}</p>
+                  <p className="text-5xl font-bold text-primary mb-2">
+                    {results.totalWords}
+                  </p>
                   <p className="text-sm text-muted-foreground">Words Typed</p>
                 </CardContent>
               </Card>
@@ -86,7 +96,9 @@ export default function Results() {
                   <h3 className="text-lg font-semibold text-muted-foreground mb-2">
                     Errors Made
                   </h3>
-                  <p className="text-5xl font-bold text-destructive mb-2">{results.errors}</p>
+                  <p className="text-5xl font-bold text-destructive mb-2">
+                    {results.errors}
+                  </p>
                   <p className="text-sm text-muted-foreground">Mistakes</p>
                 </CardContent>
               </Card>
@@ -98,7 +110,9 @@ export default function Results() {
                 <p className={`text-4xl font-bold mb-3 ${performance.color}`}>
                   {performance.title}
                 </p>
-                <p className="text-lg text-muted-foreground">{performance.description}</p>
+                <p className="text-lg text-muted-foreground">
+                  {performance.description}
+                </p>
               </CardContent>
             </Card>
 
@@ -112,7 +126,7 @@ export default function Results() {
                 <Award className="h-5 w-5" />
                 Generate Certificate
               </Button>
-              
+
               <Button
                 variant="outline"
                 size="lg"
@@ -122,7 +136,7 @@ export default function Results() {
                 <RotateCcw className="h-5 w-5" />
                 Take Another Test
               </Button>
-              
+
               <Button
                 variant="ghost"
                 size="lg"
@@ -159,7 +173,7 @@ export default function Results() {
               >
                 Back to Results
               </Button>
-              
+
               <Button
                 variant="gradient"
                 size="lg"
