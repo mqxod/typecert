@@ -1,6 +1,6 @@
-# 🧠 TypingCertificate — Free & Open Source Typing Certification Platform  
+# 🧠 TypeCert — Free & Open Source Typing Certification Platform  
 
-Welcome to **TypingCertificate**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
+Welcome to **TypeCert**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
 
 🌐 **Website:** [https://typingcertificate.online](https://typingcertificate.online)  
 💻 **Repository:** [https://github.com/maqsood421/typecert](https://github.com/maqsood421/typecert)  
