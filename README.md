@@ -1,73 +1,43 @@
-# Welcome to your Lovable project
+# 🧠 TypingCertificate — Free & Open Source Typing Certification Platform  
 
-## Project info
+Welcome to **TypingCertificate**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
 
-**URL**: https://lovable.dev/projects/6d7d2e16-62d7-49f1-bc59-f3d1b8bd5ca0
+🌐 **Website:** [https://typingcertificate.online](https://typingcertificate.online)  
+💻 **Repository:** [https://github.com/maqsood421/typingcertificate](https://github.com/maqsood421/typingcertificate)  
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 📘 About the Project  
 
-**Use Lovable**
+**TypingCertificate** is a modern, web-based platform built with **React, TypeScript, and Tailwind CSS**.  
+It provides real-time typing tests, certificate downloads, and a sleek user interface — all designed to improve typing skills and accuracy.  
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/6d7d2e16-62d7-49f1-bc59-f3d1b8bd5ca0) and start prompting.
+This project is completely **open source**, meaning anyone can use, contribute to, or improve it.  
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🧩 Tech Stack  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- ⚡ **Vite** — for blazing-fast development  
+- 💙 **React + TypeScript** — for robust, scalable UI  
+- 🎨 **Tailwind CSS + shadcn/ui** — for modern design  
+- 🧾 **jsPDF & html2canvas** — for generating PDF certificates  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Getting Started  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### **Option 1: Run Locally**
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/maqsood421/typingcertificate.git
 
-# Step 3: Install the necessary dependencies.
-npm i
+# 2️⃣ Move into the directory
+cd typingcertificate
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/6d7d2e16-62d7-49f1-bc59-f3d1b8bd5ca0) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
