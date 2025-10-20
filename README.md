@@ -3,13 +3,13 @@
 Welcome to **TypingCertificate**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
 
 🌐 **Website:** [https://typingcertificate.online](https://typingcertificate.online)  
-💻 **Repository:** [https://github.com/maqsood421/typingcertificate](https://github.com/maqsood421/typecert)  
+💻 **Repository:** [https://github.com/maqsood421/typecert](https://github.com/maqsood421/typecert)  
 
 ---
 
 ## 📘 About the Project  
 
-**TypingCertificate** is a modern, web-based platform built with **React, TypeScript, and Tailwind CSS**.  
+**TypeCert** is a modern, web-based platform built with **React, TypeScript, and Tailwind CSS**.  
 It provides real-time typing tests, certificate downloads, and a sleek user interface — all designed to improve typing skills and accuracy.  
 
 This project is completely **open source**, meaning anyone can use, contribute to, or improve it.  
@@ -31,10 +31,10 @@ This project is completely **open source**, meaning anyone can use, contribute t
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/maqsood421/typingcertificate.git
+git clone https://github.com/maqsood421/typecert.git
 
 # 2️⃣ Move into the directory
-cd typingcertificate
+cd typecert
 
 # 3️⃣ Install dependencies
 npm install
