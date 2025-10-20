@@ -17,12 +17,15 @@ export default function About() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl font-bold mb-4">
-            About <span className="bg-gradient-primary bg-clip-text text-transparent">Typix</span>
+            About{" "}
+            <span className="bg-gradient-primary bg-clip-text text-transparent">
+              TypeCert
+            </span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Typix is a modern typing platform built to help users improve their
-            typing accuracy, speed, and confidence — while earning professional
-            certifications that showcase their skills.
+            TypeCert is a modern typing platform built to help users improve
+            their typing accuracy, speed, and confidence — while earning
+            professional certifications that showcase their skills.
           </p>
         </motion.div>
 
@@ -42,8 +45,8 @@ export default function About() {
             <p className="text-muted-foreground leading-relaxed">
               Whether you’re a student preparing for your next exam, a developer
               improving your coding speed, or a professional polishing your
-              communication workflow — Typix provides a reliable environment to
-              grow your typing proficiency.
+              communication workflow — TypeCert provides a reliable environment
+              to grow your typing proficiency.
             </p>
             <p className="text-muted-foreground leading-relaxed">
               We combine performance analytics, real-time feedback, and
@@ -113,7 +116,7 @@ export default function About() {
           <h3 className="text-2xl font-semibold mb-4">Our Vision</h3>
           <p className="text-muted-foreground leading-relaxed text-lg">
             We believe typing is not just a skill — it’s a digital superpower.
-            Typix aims to empower individuals worldwide by providing free,
+            TypeCert aims to empower individuals worldwide by providing free,
             accessible, and enjoyable typing experiences that build confidence
             and open career opportunities.
           </p>

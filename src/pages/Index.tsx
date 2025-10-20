@@ -70,7 +70,7 @@ export default function Index() {
           viewport={{ once: true }}
           className="text-4xl font-bold mb-12"
         >
-          Why Choose <span className="text-primary">Typix</span>?
+          Why Choose <span className="text-primary">TypeCert</span>?
         </motion.h2>
 
         <div className="grid md:grid-cols-3 gap-8">

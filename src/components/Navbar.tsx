@@ -26,7 +26,7 @@ export default function Navbar() {
             <Keyboard className="h-6 w-6 text-white" />
           </div>
           <span className="font-bold text-xl bg-gradient-primary bg-clip-text text-transparent">
-            Typix
+            TypeCert
           </span>
         </Link>
 

@@ -10,7 +10,7 @@ export default function Footer() {
             <Keyboard className="h-5 w-5 text-white" />
           </div>
           <h2 className="font-semibold text-lg bg-gradient-primary bg-clip-text text-transparent">
-            Typix
+            TypeCert
           </h2>
         </div>
 
@@ -44,7 +44,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className="text-sm text-muted-foreground">
-          © {new Date().getFullYear()} Typix — Built by{" "}
+          © {new Date().getFullYear()} TypeCert — Built by{" "}
           <span className="font-medium text-primary">Maqsood Ahmed</span>
         </p>
       </div>
