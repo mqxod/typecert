@@ -3,7 +3,7 @@
 Welcome to **TypingCertificate**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
 
 🌐 **Website:** [https://typingcertificate.online](https://typingcertificate.online)  
-💻 **Repository:** [https://github.com/maqsood421/typingcertificate](https://github.com/maqsood421/typingcertificate)  
+💻 **Repository:** [https://github.com/maqsood421/typingcertificate](https://github.com/maqsood421/typecert)  
 
 ---
 
