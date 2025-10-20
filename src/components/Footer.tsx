@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Links */}
         <div className="flex gap-6 text-muted-foreground">
           <a
-            href="https://github.com/maqsood421"
+            href="https://github.com/mqxod/tpyecert"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
             <Github className="h-5 w-5" />
           </a>
           <a
-            href="https://linkedin.com/in/maqsood421"
+            href="https://linkedin.com/in/company/typecert"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
@@ -33,7 +33,7 @@ export default function Footer() {
             <Linkedin className="h-5 w-5" />
           </a>
           <a
-            href="https://maqsood421.github.io"
+            href="https://maqsood-dev.online"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
