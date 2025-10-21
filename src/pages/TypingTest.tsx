@@ -16,7 +16,7 @@ export default function TypingTest() {
   const [timeRemaining, setTimeRemaining] = useState(duration * 60);
   const [isActive, setIsActive] = useState(false);
   const [isFinished, setIsFinished] = useState(false);
-  
+
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   useEffect(() => {
@@ -36,11 +36,52 @@ export default function TypingTest() {
     }
   }, [isActive, timeRemaining]);
 
+  // Fixed: Move navigation logic here with proper calculations
   useEffect(() => {
     if (isFinished) {
-      navigateToResults();
+      const timeElapsed = duration * 60 - timeRemaining;
+      const words = userInput.trim().split(/\s+/).length;
+      const wpm =
+        timeElapsed === 0 ? 0 : Math.round(words / (timeElapsed / 60));
+
+      let correctChars = 0;
+      for (let i = 0; i < userInput.length; i++) {
+        if (userInput[i] === paragraph[i]) {
+          correctChars++;
+        }
+      }
+      const accuracy =
+        userInput.length === 0
+          ? 100
+          : Math.round((correctChars / userInput.length) * 100);
+
+      let errors = 0;
+      for (let i = 0; i < userInput.length; i++) {
+        if (userInput[i] !== paragraph[i]) {
+          errors++;
+        }
+      }
+
+      const results = {
+        wpm,
+        accuracy,
+        errors,
+        totalWords: words,
+        timeElapsed,
+        userName,
+      };
+
+      navigate("/results", { state: results });
     }
-  }, [isFinished]);
+  }, [
+    isFinished,
+    userInput,
+    timeRemaining,
+    duration,
+    paragraph,
+    userName,
+    navigate,
+  ]);
 
   useEffect(() => {
     inputRef.current?.focus();
@@ -48,7 +89,7 @@ export default function TypingTest() {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const value = e.target.value;
-    
+
     if (!isActive && value.length > 0) {
       setIsActive(true);
     }
@@ -70,14 +111,14 @@ export default function TypingTest() {
 
   const calculateAccuracy = () => {
     if (userInput.length === 0) return 100;
-    
+
     let correctChars = 0;
     for (let i = 0; i < userInput.length; i++) {
       if (userInput[i] === paragraph[i]) {
         correctChars++;
       }
     }
-    
+
     return Math.round((correctChars / userInput.length) * 100);
   };
 
@@ -91,23 +132,10 @@ export default function TypingTest() {
     return errors;
   };
 
-  const navigateToResults = () => {
-    const results = {
-      wpm: calculateWPM(),
-      accuracy: calculateAccuracy(),
-      errors: calculateErrors(),
-      totalWords: userInput.trim().split(/\s+/).length,
-      timeElapsed: duration * 60 - timeRemaining,
-      userName: userName,
-    };
-
-    navigate("/results", { state: results });
-  };
-
   const renderParagraph = () => {
     return paragraph.split("").map((char, index) => {
       let className = "text-2xl";
-      
+
       if (index < userInput.length) {
         if (userInput[index] === char) {
           className += " text-success font-semibold";
@@ -131,11 +159,7 @@ export default function TypingTest() {
   return (
     <div className="min-h-screen bg-gradient-hero py-8">
       <div className="container mx-auto px-4 max-w-5xl">
-        <Button 
-          variant="ghost" 
-          onClick={() => navigate("/")}
-          className="mb-6"
-        >
+        <Button variant="ghost" onClick={() => navigate("/")} className="mb-6">
           <ArrowLeft className="mr-2 h-4 w-4" />
           Back to Home
         </Button>
@@ -169,7 +193,9 @@ export default function TypingTest() {
 
           <div className="mt-6 text-center space-y-2">
             <p className="text-muted-foreground">
-              {isActive ? "Keep typing! Your test is in progress." : "Start typing to begin the test."}
+              {isActive
+                ? "Keep typing! Your test is in progress."
+                : "Start typing to begin the test."}
             </p>
             {isActive && (
               <Button variant="outline" onClick={() => navigate("/")}>
