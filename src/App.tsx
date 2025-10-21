@@ -3,6 +3,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Routes, Route, Navigate, useSearchParams } from "react-router-dom";
+import StateProtectedRoute from "./components/StateProtectedRoute";
 import Index from "./pages/Index";
 import TypingTest from "./pages/TypingTest";
 import Results from "./pages/Results";
@@ -47,9 +48,11 @@ const App = () => (
         <Route
           path="/results"
           element={
-            <ProtectedRoute requiredParams={["wpm"]}>
+            <StateProtectedRoute
+              requiredStateKeys={["wpm", "accuracy", "userName"]}
+            >
               <Results />
-            </ProtectedRoute>
+            </StateProtectedRoute>
           }
         />
         <Route path="*" element={<NotFound />} />
