@@ -17,7 +17,7 @@ export default function Footer() {
         {/* Links */}
         <div className="flex gap-6 text-muted-foreground">
           <a
-            href="https://github.com/mqxod/tpyecert"
+            href="https://github.com/mqxod/typecert/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-primary transition-colors"
