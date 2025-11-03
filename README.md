@@ -3,7 +3,7 @@
 Welcome to **TypeCert**, an open-source project that allows anyone to **test typing speed, measure accuracy, and instantly download verified certificates — for free.**  
 
 🌐 **Website:** [https://typingcertificate.online](https://typingcertificate.online)  
-💻 **Repository:** [https://github.com/maqsood421/typecert](https://github.com/maqsood421/typecert)  
+💻 **Repository:** [https://github.com/mqxod/typecert](https://github.com/mqxod/typecert)  
 
 ---
 
@@ -31,7 +31,7 @@ This project is completely **open source**, meaning anyone can use, contribute t
 
 ```bash
 # 1️⃣ Clone the repository
-git clone https://github.com/maqsood421/typecert.git
+git clone https://github.com/mqxod/typecert.git
 
 # 2️⃣ Move into the directory
 cd typecert
